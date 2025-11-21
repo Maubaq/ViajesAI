@@ -1,4 +1,8 @@
 {
+  "buildCommand": "npm install && npm run build",
+  "installCommand": "npm install",
+  "outputDirectory": "build",
+  "framework": "create-react-app",
   "rewrites": [
     {
       "source": "/api/planificar",
@@ -14,5 +18,3 @@
     }
   ]
 }
-
-
