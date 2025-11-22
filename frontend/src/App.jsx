@@ -81,7 +81,7 @@ const renderMarkdown = (text) => {
         sectionContent.push(<br key={`br-${index}`} />);
       } else {
         // Detectar bullets dentro de la sección
-        const bulletMatch = trimmedLine.match(/^(?:[•\-\*]|\d+\.)\s+(.+)/);
+        const bulletMatch = trimmedLine.match(/^(?:[•\-*]|\d+\.)\s+(.+)/);
         if (bulletMatch) {
           sectionContent.push(
             <div key={`bullet-${index}`} className="response-bullet">
@@ -101,7 +101,7 @@ const renderMarkdown = (text) => {
       if (trimmedLine === '') {
         result.push(<br key={`line-${index}`} />);
       } else {
-        const bulletMatch = trimmedLine.match(/^(?:[•\-\*]|\d+\.)\s+(.+)/);
+        const bulletMatch = trimmedLine.match(/^(?:[•\-*]|\d+\.)\s+(.+)/);
         if (bulletMatch) {
           result.push(
             <div key={`line-${index}`} className="response-bullet">
@@ -437,9 +437,8 @@ function App() {
                 let textoProcesado = linea.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
                 
                 // Detectar bullets
-                if (linea.match(/^[•\-\*]\s+(.+)/)) {
-                  const contenido = linea.replace(/^[•\-\*]\s+/, '');
-                  contenidoSeccion += `<li>${textoProcesado.replace(/^[•\-\*]\s+/, '')}</li>`;
+                if (linea.match(/^[•\-*]\s+(.+)/)) {
+                  contenidoSeccion += `<li>${textoProcesado.replace(/^[•\-*]\s+/, '')}</li>`;
                 } else if (linea.trim() && !linea.match(/^ALOJAMIENTO:|^COMIDA LOCAL:|^LUGARES IMPERDIBLES:|^CONSEJOS LOCALES:|^ESTIMACIÓN DE COSTOS:/)) {
                   contenidoSeccion += `<li>${textoProcesado}</li>`;
                 }
