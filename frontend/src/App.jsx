@@ -548,7 +548,9 @@ function App() {
     setError('');
 
     try {
-      const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+      // En producción (Vercel), usar rutas relativas. En desarrollo, usar la URL configurada o localhost
+      const apiUrl = process.env.REACT_APP_API_URL || 
+                     (process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5000');
       const res = await axios.post(`${apiUrl}/api/planificar`, {
         pregunta: question,
         session_id: sessionId
@@ -608,7 +610,9 @@ function App() {
     setError('');
 
     try {
-      const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+      // En producción (Vercel), usar rutas relativas. En desarrollo, usar la URL configurada o localhost
+      const apiUrl = process.env.REACT_APP_API_URL || 
+                     (process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5000');
       const res = await axios.post(`${apiUrl}/api/planificar`, {
         pregunta: followUpQuestion,
         session_id: sessionId
@@ -667,7 +671,9 @@ function App() {
     // Enviar automáticamente la pregunta
     setLoading(true);
     try {
-      const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+      // En producción (Vercel), usar rutas relativas. En desarrollo, usar la URL configurada o localhost
+      const apiUrl = process.env.REACT_APP_API_URL || 
+                     (process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5000');
       const res = await axios.post(`${apiUrl}/api/planificar`, {
         pregunta: preguntaInicial
       });

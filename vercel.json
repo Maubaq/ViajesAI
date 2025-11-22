@@ -1,16 +1,11 @@
 {
-  "buildCommand": "npm run build",
-  "installCommand": "npm install",
-  "outputDirectory": "build",
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/build",
   "framework": "create-react-app",
   "rewrites": [
     {
-      "source": "/api/planificar",
-      "destination": "/api/planificar"
-    },
-    {
-      "source": "/api/health",
-      "destination": "/api/health"
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
     },
     {
       "source": "/(.*)",
