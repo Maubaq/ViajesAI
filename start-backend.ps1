@@ -10,7 +10,7 @@ if (-not $envExists) {
     Write-Host "Creando archivo .env..." -ForegroundColor Yellow
     $envContent = @"
 # API Key de Google Gemini
-GEMINI_API_KEY=AIzaSyDBWWxyQAgBnxFrhxoKGJhS2NTD_MDdnno
+GEMINI_API_KEY=AIzaSyBgtKCWZ7IbPujHbfCuCihRfXW3B3VMsb4
 
 # API Key de Weatherbit (opcional - para clima actual)
 # Obtén tu clave gratuita en: https://www.weatherbit.io/
@@ -42,7 +42,7 @@ GEMINI_MODEL=gemini-2.0-flash
         Write-Host "Recreando archivo .env con codificacion correcta..." -ForegroundColor Yellow
         $envContent = @"
 # API Key de Google Gemini
-GEMINI_API_KEY=AIzaSyDBWWxyQAgBnxFrhxoKGJhS2NTD_MDdnno
+GEMINI_API_KEY=AIzaSyBgtKCWZ7IbPujHbfCuCihRfXW3B3VMsb4
 
 # API Key de Weatherbit (opcional - para clima actual)
 # Obtén tu clave gratuita en: https://www.weatherbit.io/

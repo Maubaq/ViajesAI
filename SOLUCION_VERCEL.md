@@ -40,7 +40,7 @@ Install Command: npm install
 Ve a **Settings → Environment Variables** y asegúrate de tener:
 
 ```
-GEMINI_API_KEY=AIzaSyDBWWxyQAgBnxFrhxoKGJhS2NTD_MDdnno
+GEMINI_API_KEY=AIzaSyBgtKCWZ7IbPujHbfCuCihRfXW3B3VMsb4
 GEMINI_MODEL=gemini-2.0-flash
 WEATHERBIT_API_KEY=dbc51eb5faf3451da9f8855daf663c06
 UNSPLASH_ACCESS_KEY=tu_key_aqui

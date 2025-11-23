@@ -52,7 +52,7 @@ Este error significa que hay un problema con la API key o el modelo de Gemini.
 
 1. Verifica que `backend/.env` tiene:
    ```env
-   GEMINI_API_KEY=AIzaSyDBWWxyQAgBnxFrhxoKGJhS2NTD_MDdnno
+   GEMINI_API_KEY=AIzaSyBgtKCWZ7IbPujHbfCuCihRfXW3B3VMsb4
    GEMINI_MODEL=gemini-2.0-flash
    ```
 

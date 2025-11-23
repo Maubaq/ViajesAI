@@ -71,7 +71,7 @@ Crea los archivos de entorno manualmente:
 
 **backend/.env:**
 ```env
-GEMINI_API_KEY=AIzaSyDBWWxyQAgBnxFrhxoKGJhS2NTD_MDdnno
+GEMINI_API_KEY=AIzaSyBgtKCWZ7IbPujHbfCuCihRfXW3B3VMsb4
 PORT=5000
 FLASK_DEBUG=True
 ALLOWED_ORIGINS=http://localhost:3000

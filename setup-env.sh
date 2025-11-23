@@ -8,7 +8,7 @@ if [ ! -f backend/.env ]; then
     echo "Creando backend/.env..."
     cat > backend/.env << EOF
 # API Key de Google Gemini
-GEMINI_API_KEY=AIzaSyDBWWxyQAgBnxFrhxoKGJhS2NTD_MDdnno
+GEMINI_API_KEY=AIzaSyBgtKCWZ7IbPujHbfCuCihRfXW3B3VMsb4
 
 # Configuración del servidor
 PORT=5000

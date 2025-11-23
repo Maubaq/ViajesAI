@@ -23,6 +23,7 @@ python -m venv venv
 venv\Scripts\activate
 # Linux/Mac:
 source venv/bin/activate
+venv\Scripts\Activate.ps1
 
 # 4. Instalar dependencias
 pip install -r requirements.txt
@@ -94,7 +95,7 @@ PORT=5001
 
 ### Error: "GEMINI_API_KEY not found"
 - Verifica que el archivo `backend/.env` existe
-- Verifica que contiene: `GEMINI_API_KEY=AIzaSyDBWWxyQAgBnxFrhxoKGJhS2NTD_MDdnno`
+- Verifica que contiene: `GEMINI_API_KEY=AIzaSyBgtKCWZ7IbPujHbfCuCihRfXW3B3VMsb4`
 
 ---
 

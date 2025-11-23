@@ -13,7 +13,7 @@ if (-not (Test-Path "backend") -or -not (Test-Path "frontend")) {
 # Iniciar backend en una nueva ventana
 Write-Host "Iniciando backend en nueva ventana..." -ForegroundColor Yellow
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd '$PWD\backend'; if (-not (Test-Path '.env')) { @'
-GEMINI_API_KEY=AIzaSyDBWWxyQAgBnxFrhxoKGJhS2NTD_MDdnno
+GEMINI_API_KEY=AIzaSyBgtKCWZ7IbPujHbfCuCihRfXW3B3VMsb4
 PORT=5000
 FLASK_DEBUG=True
 ALLOWED_ORIGINS=http://localhost:3000

@@ -7,7 +7,7 @@ if (-not (Test-Path "backend\.env")) {
     Write-Host "Creando backend\.env..." -ForegroundColor Yellow
     @" 
 # API Key de Google Gemini
-GEMINI_API_KEY=AIzaSyDBWWxyQAgBnxFrhxoKGJhS2NTD_MDdnno
+GEMINI_API_KEY=AIzaSyBgtKCWZ7IbPujHbfCuCihRfXW3B3VMsb4
 
 # API Key de Weatherbit (opcional - para clima actual)
 # Obtén tu clave gratuita en: https://www.weatherbit.io/

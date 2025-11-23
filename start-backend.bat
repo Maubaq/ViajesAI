@@ -7,7 +7,7 @@ if not exist .env (
     echo Creando archivo .env...
     (
         echo # API Key de Google Gemini
-        echo GEMINI_API_KEY=AIzaSyDBWWxyQAgBnxFrhxoKGJhS2NTD_MDdnno
+        echo GEMINI_API_KEY=AIzaSyBgtKCWZ7IbPujHbfCuCihRfXW3B3VMsb4
         echo.
         echo # Configuración del servidor
         echo PORT=5000
